@@ -1,0 +1,21 @@
+#!/usr/bin/fish
+
+test -d ~/.config/nvim/python/; and command -v xdotool >/dev/null
+test $status -ne 0; and exit 1
+
+set item (
+  pass git ls-files "**.gpg" | \
+    sed 's/\.gpg$//' | \
+    sort | \
+    python3 ~/.config/nvim/python/menu.py \
+      --daemonize \
+      --history password \
+      --title 'Select password...' \
+      2>/dev/null
+)
+
+test -z $item; and exit 1
+
+# pass show -c $item
+set password (pass show $item | head -n 1)
+xdotool type --clearmodifiers "$password"
