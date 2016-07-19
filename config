@@ -192,5 +192,5 @@ bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/bin/passmenu
 bindsym $mod+Return [instance="(?i)terminal"] focus
 bindsym $mod+i [instance="Navigator"] focus
 
-exec setxkbmap br
+exec --no-startup-id setxkbmap br
 exec --no-startup-id compton -cCGfb -D 2 -O 1.0 -o 0.9 -r 25 -t -28 -l -38 --inactive-dim 0.4 -i 0.75 --focus-exclude 'name="i3lock"'
