@@ -185,12 +185,17 @@ assign [instance="Navigator"] workspace 2
 for_window [class="menu"] floating enable, border none
 for_window [instance="Navigator"] border none
 for_window [instance="(?i)terminal"] border none
+for_window [class="(?i)pavucontrol"] floating enable
 
 bindsym $mod+Control+l exec i3lock
 bindsym $mod+b border toggle
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/bin/passmenu
 bindsym $mod+Return [instance="(?i)terminal"] focus
 bindsym $mod+i [instance="Navigator"] focus
+
+bindsym $mod+Control+Left exec --no-startup-id amixer -D pulse -M set Master 5%-
+bindsym $mod+Control+Right exec --no-startup-id amixer -D pulse -M set Master 5%+
+bindsym $mod+Control+m exec --no-startup-id amixer -D pulse -M set Master toggle
 
 exec --no-startup-id setxkbmap br
 exec --no-startup-id compton -cCGfb -D 2 -O 1.0 -o 0.9 -r 25 -t -28 -l -38 --inactive-dim 0.4 -i 0.75 --focus-exclude 'name="i3lock"'
