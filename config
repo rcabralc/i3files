@@ -36,7 +36,7 @@ bindsym $mod+Shift+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start a program launcher
-bindsym $mod+r exec --no-startup-id i3-dmenu-desktop --dmenu="python3 ~/.config/nvim/python/menu.py -d --title 'Launch...' --history-key launchapp --limit 20"
+bindsym $mod+r exec --no-startup-id i3-dmenu-desktop --dmenu="python ~/.config/nvim/python/menu.py -d --title 'Launch...' --history-key launchapp --limit 20"
 
 # change focus
 bindsym $mod+h focus left
