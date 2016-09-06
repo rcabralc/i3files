@@ -192,6 +192,7 @@ bindsym $mod+b border toggle
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/bin/passmenu
 bindsym $mod+Return [instance="(?i)terminal"] focus
 bindsym $mod+i [instance="Navigator"] focus
+bindsym $mod+Shift+s exec --no-startup-id i3lock && systemctl suspend
 
 bindsym $mod+Control+Up exec --no-startup-id amixer -D pulse -M set Speaker 5%+
 bindsym $mod+Control+Down exec --no-startup-id amixer -D pulse -M set Speaker 5%-
