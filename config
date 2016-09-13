@@ -187,7 +187,7 @@ for_window [instance="Navigator"] border none
 for_window [instance="(?i)terminal"] border none
 for_window [class="(?i)pavucontrol"] floating enable
 
-bindsym $mod+Control+l exec i3lock
+bindsym $mod+Control+l exec i3lock -c 000000 -p win
 bindsym $mod+b border toggle
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/bin/passmenu
 bindsym $mod+Return [instance="(?i)terminal"] focus
