@@ -185,6 +185,7 @@ assign [instance="Navigator"] workspace 2
 for_window [class="menu"] floating enable, border none
 for_window [instance="Navigator"] border none
 for_window [instance="(?i)terminal"] border none
+assign [instance="(?i)terminal"] workspace 1
 for_window [class="(?i)pavucontrol"] floating enable
 
 bindsym $mod+Control+l exec i3lock -c 000000 -p win
