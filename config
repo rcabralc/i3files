@@ -38,8 +38,9 @@ bindsym $mod+Shift+i exec firefox
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start a program launcher
+# Start a program launcher.  For Ubuntu, use python3.
 bindsym $mod+r exec --no-startup-id i3-dmenu-desktop --dmenu="python ~/.config/nvim/python/menu.py -d --title 'Launch...' --history-key launchapp --limit 20"
+# bindsym $mod+r exec --no-startup-id i3-dmenu-desktop --dmenu="python3 ~/.config/nvim/python/menu.py -d --title 'Launch...' --history-key launchapp --limit 20"
 
 # change focus
 bindsym $mod+h focus left
