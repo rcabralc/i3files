@@ -204,6 +204,9 @@ bindsym $mod+Control+Right exec --no-startup-id mpc next
 bindsym $mod+Control+Left exec --no-startup-id mpc prev
 bindsym $mod+Pause exec --no-startup-id mpc toggle
 
+# For two-monitor setup.
+# workspace 1 output DP1
+
 focus_follows_mouse no
 
 exec --no-startup-id setxkbmap br
