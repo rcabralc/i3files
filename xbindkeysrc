@@ -1,0 +1,11 @@
+# vim: ft=conf
+
+# Ctrl+^ -> /
+"xset r off; xdotool keyup --window 0 dead_tilde key --clearmodifiers --window 0 slash; xset r on"
+  m:0x4 + c:48
+  Control + dead_tilde
+
+# Ctrl+~ -> ?
+"xset r off; xdotool keyup --window 0 dead_tilde key --clearmodifiers --window 0 question; xset r on"
+  m:0x5 + c:48
+  Control+Shift + dead_tilde
