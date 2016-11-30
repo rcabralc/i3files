@@ -187,12 +187,10 @@ client.urgent           $magenta $magenta $white  $lime      $magenta
 client.placeholder      $black   $black   $gray2  $black     $black
 client.background       $black
 
-assign [instance="Navigator"] workspace 2
 for_window [class="menu"] floating enable, border none
-for_window [instance="Navigator"] border none
-for_window [instance="(?i)terminal"] border none
-assign [instance="(?i)terminal"] workspace 1
 for_window [class="(?i)pavucontrol"] floating enable
+for_window [instance="Navigator"] move to workspace 2, border none
+for_window [instance="(?i)terminal"] move to workspace 1, border none
 
 bindsym $mod+Control+l exec i3lock -c 000000 -p win
 bindsym $mod+b border toggle
