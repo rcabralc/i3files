@@ -172,8 +172,8 @@ bar {
         separator  $gray2
                            #border  #bg      #text
         focused_workspace  $purple  $purple  $black
-        active_workspace   $black   $black   $gray2
-        inactive_workspace $black   $black   $white
+        active_workspace   $black   $black   $white
+        inactive_workspace $black   $black   $gray2
         urgent_workspace   $magenta $magenta $white
         binding_mode       $orange  $orange  $black
     }
