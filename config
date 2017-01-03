@@ -152,13 +152,13 @@ mode "resize" {
 bindsym $mod+z mode "resize"
 
 # Colors
-set $black   "#26231d"
-set $white   "#f5e2bc"
-set $lime    "#9fd304"
-set $purple  "#b482ff"
-set $magenta "#f60461"
-set $orange  "#f66d04"
-set $gray2   "#6a6251"
+set $black   "#2c241d"
+set $white   "#f5c9a2"
+set $green   "#88ad0c"
+set $purple  "#a74d78"
+set $magenta "#da0050"
+set $orange  "#ff5f02"
+set $gray2   "#866e59"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -180,10 +180,10 @@ bar {
 }
 
                         #border  #bg      #text   #indicator #child_border
-client.focused          $purple  $purple  $black  $lime      $purple
-client.focused_inactive $black   $black   $white  $lime      $black
-client.unfocused        $black   $black   $gray2  $lime      $black
-client.urgent           $magenta $magenta $white  $lime      $magenta
+client.focused          $purple  $purple  $black  $green     $purple
+client.focused_inactive $black   $black   $white  $green     $black
+client.unfocused        $black   $black   $gray2  $green     $black
+client.urgent           $magenta $magenta $white  $green     $magenta
 client.placeholder      $black   $black   $gray2  $black     $black
 client.background       $black
 
